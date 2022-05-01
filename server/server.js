@@ -7,7 +7,7 @@ const port = process.env.PORT || 9000
 
 app.use(cors())
 
-app.serve(Gun.serve)
+app.use(Gun.serve)
 
 app.get('/', (_, res)=>{
     res.status(200).send('> DEBUG: Pokechain Node is Live.')

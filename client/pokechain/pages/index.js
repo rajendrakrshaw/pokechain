@@ -1,5 +1,6 @@
-import styles from '../styles/Home.modules.css'
+
 import Sidebar from '../components/sidebar'
+import styles from '../styles/sidebar.module.css'
 export default function Home() {
   return (
   <div className={styles.wrapper}>

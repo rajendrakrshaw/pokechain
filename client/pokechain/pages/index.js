@@ -1,6 +1,7 @@
 
+import ConversationList from '../components/ConversationList'
 import Sidebar from '../components/sidebar'
-import styles from '../styles/sidebar.module.css'
+import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
   <div className={styles.wrapper}>
@@ -8,6 +9,7 @@ export default function Home() {
     <Sidebar/>
     <div className={styles.main}>
       {/*conversationList*/}
+      <ConversationList />
       {/*chat View*/}
     </div>
   </div>

@@ -32,6 +32,11 @@ const dummyDms = [
         name: 'Dipika',
         avatar: avatar4,
     },
+    {
+        id: 5,
+        name: 'Atul',
+        avatar: avatar2,
+    },
 ]
 
 const ConversationList = () => {
@@ -71,6 +76,7 @@ const ConversationList = () => {
                     <DmCard 
                         key={index}
                         id={dm.id}
+                        name={dm.name}
                         avatar={
                             dm.avatar
                          }

@@ -1,17 +1,16 @@
-
-import ConversationList from '../components/ConversationList'
-import Sidebar from '../components/sidebar'
 import styles from '../styles/Home.module.css'
+import SideBar from '../components/Sidebar'
+import ConversationList from '../components/ConversationList'
+import ChatView from '../components/ChatView'
+
 export default function Home() {
   return (
-  <div className={styles.wrapper}>
-    {/*sidebar*/}
-    <Sidebar/>
-    <div className={styles.main}>
-      {/*conversationList*/}
-      <ConversationList />
-      {/*chat View*/}
+    <div className={styles.wrapper}>
+      <SideBar />
+      <div className={styles.main}>
+        <ConversationList />
+        <ChatView />
+      </div>
     </div>
-  </div>
   )
 }
